@@ -68,10 +68,8 @@ public class CalculadoraDePrecos {
 	
 	public static BigDecimal calculaPrecoPorLotacao (BigDecimal preco, Sessao sessao, double fatorLotacao, double fatorEncarecedor){
 		if((sessao.getTotalIngressos() - sessao.getIngressosReservados()) / sessao.getTotalIngressos().doubleValue() <= fatorLotacao){
-			preco = sessao.getPreco().add(sessao.getPreco().multiply(BigDecimal.valueOf(fatorEncarecedor)));
-		} else {
-			preco = sessao.getPreco();
-		}
+			preco = preco.add(sessao.getPreco().multiply(BigDecimal.valueOf(fatorEncarecedor)));
+		} 
 		return preco;
 	}
 	
