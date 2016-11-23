@@ -9,7 +9,7 @@ public class SessaoTest {
 	public void deveVender2IngressosSeHa2vagas() throws Exception {
 		Sessao sessao = new Sessao();
         sessao.setTotalIngressos(2);
-
+//novo
         Assert.assertTrue(sessao.podeReservar(2));
 	}	
 	
@@ -17,7 +17,7 @@ public class SessaoTest {
 	public void deveVender1ingressoSeHa2vagas() throws Exception {
 		Sessao sessao = new Sessao();
         sessao.setTotalIngressos(2);
-
+        
         Assert.assertTrue(sessao.podeReservar(1));
 	}
 	
