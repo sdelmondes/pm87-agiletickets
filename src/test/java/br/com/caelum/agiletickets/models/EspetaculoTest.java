@@ -61,7 +61,7 @@ public class EspetaculoTest {
 
 		assertTrue(ivete.Vagas(10, 3));
 	}
-
+	
 	@Test
 	public void DeveInformarSeNaoEhPossivelReservarAQuantidadeDeIngressosDentroDeQualquerDasSessoesComUmMinimoPorSessao() {
 		Espetaculo ivete = new Espetaculo();
