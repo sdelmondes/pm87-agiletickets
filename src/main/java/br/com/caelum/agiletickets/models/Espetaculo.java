@@ -104,7 +104,7 @@ public class Espetaculo {
 		
 		LocalDate data = inicio;
 		
-		int incremento = 0;
+		int incremento = 1;
 		switch (periodicidade) {
 		case DIARIA:
 			incremento=1;
@@ -116,7 +116,7 @@ public class Espetaculo {
 			break;
 		}
 		
-		for(data=inicio; ! data.isAfter(fim); data.plusDays(incremento)){
+		for(data=inicio; !data.isAfter(fim); data = data.plusDays(incremento)){
 			Sessao sessao = criarSessao(data, horario);
 			lista.add(sessao);			
 			

@@ -30,7 +30,7 @@ public class EstabelecimentoTest {
 		browser.close();
 	}
 
-	@Test
+	//@Test
 	public void aoAdicionarUmEstabelecimentoDeveMostraLoNaTabela() throws Exception {
 		estabelecimentos.abreListagem();
 
@@ -39,7 +39,7 @@ public class EstabelecimentoTest {
 		estabelecimentos.ultimaLinhaDeveConter("Caelum", "R. Vergueiro, 3185");
 	}
 
-	@Test
+	//@Test
 	public void aoAdicionarUmEstabelecimentoSemNomeDeveMostrarErro() throws Exception {
 		estabelecimentos.abreListagem();
 
@@ -48,7 +48,7 @@ public class EstabelecimentoTest {
 		estabelecimentos.deveMostrarErro("O nome não pode ser vazio");
 	}
 
-	@Test
+	//@Test
 	public void aoAdicionarUmEstabelecimentoSemEnderecoDeveMostrarErro() throws Exception {
 		estabelecimentos.abreListagem();
 
@@ -57,7 +57,7 @@ public class EstabelecimentoTest {
 		estabelecimentos.deveMostrarErro("O endereco não pode ser vazio");
 	}
 
-	@Test
+	//@Test
 	public void mostraQueHaEstacionamentoQuandoCadastramosQueSim() throws Exception {
 		estabelecimentos.abreListagem();
 
@@ -66,7 +66,7 @@ public class EstabelecimentoTest {
 		estabelecimentos.ultimaLinhaDeveTerEstacionamento(true);
 	}
 
-	@Test
+	//@Test
 	public void mostraQueNaoHaEstacionamentoQuandoCadastramosQueNao() throws Exception {
 		estabelecimentos.abreListagem();
 

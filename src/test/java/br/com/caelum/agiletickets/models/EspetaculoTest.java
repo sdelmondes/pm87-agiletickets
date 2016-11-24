@@ -78,7 +78,7 @@ public class EspetaculoTest {
 		assertFalse(ivete.Vagas(5, 3));
 	}
 	
-	//@Test
+	@Test
 	public void DeveCriarUnicaSessaoSeInicioIgualFim() {
 		Espetaculo ivete = new Espetaculo();
 		LocalDate inicio = new LocalDate(2016, 11, 24);
@@ -97,7 +97,7 @@ public class EspetaculoTest {
 		Assert.assertEquals(ivete, sessao.getEspetaculo());
 	}
 	
-	//@Test
+	@Test
 	public void deveCriar3EspetaculosSemanaisDoDia9a23(){
 		Espetaculo ivete = new Espetaculo();
 		LocalDate inicio = new LocalDate(2011, 01, 9);
